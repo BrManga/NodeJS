@@ -1,14 +1,28 @@
 var rect = require("./rectangle");
 function solveRect(l, b) {
   console.log("solving for rect l= " + l + "and b= " + b);
-  if (l <= 0 || b <= 0) {
-    console.log(
-      "Rectangle dimensions should be greater than zero. l= " + l + "b= " + b
-    );
-  } else {
-    console.log("the area of rect is" + rect.area(l, b));
-    console.log("the perimeter of rect is" + rect.perimeter(l, b));
-  }
+  rect(l, b, (err, rectangle) => {
+    if (err) {
+      console.log("ERROR    ", err.message);
+    } else {
+      console.log(
+        "the area of the rectangle dimensions l= " +
+          l +
+          "and b= " +
+          b +
+          " is" +
+          rectangle.area()
+      );
+      console.log(
+        "the perimeter of rectangle dimensions l= " +
+          l +
+          "and b= " +
+          b +
+          " is" +
+          rectangle.perimeter()
+      );
+    }
+  });
 }
 solveRect(2, 4);
 solveRect(3, 5);
