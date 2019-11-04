@@ -1,6 +1,6 @@
 [submodule "Node-Express"]
 	path = Node-Express
-	url = git@github.com:BrManga/NodeJS.git
+	url = git@github.com:BrManga/Node_Express.git
 [submodule "node-http"]
         path = node-http
         url = git@github.com:BrManga/node-http.git
