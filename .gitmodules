@@ -7,4 +7,7 @@
 [submodule "conFusionServer"]
         path = conFusionServer
         url = git@github.com:BrManga/conFusionServer.git
+[submodule "node_mongoose"]
+        path = node_mongoose
+        url = git@github.com:BrManga/node_mongoose.git
 
