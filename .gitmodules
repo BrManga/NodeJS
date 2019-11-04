@@ -1,5 +1,5 @@
-[submodule "Node-Express"]
-	path = Node-Express
+[submodule "Node_Express"]
+	path = Node_Express
 	url = git@github.com:BrManga/Node_Express.git
 [submodule "node-http"]
         path = node-http
